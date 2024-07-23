@@ -1,175 +1,389 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>LeTungLam</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="img/favicon.jpg">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-  </style>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="img/anhnhom.JPEG">
 </head>
-<body class="w3-light-grey">
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
+<body id="myPage">
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-theme-d2 w3-left-align">
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2"
+           href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Logo</a>
+        <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Thành viên</a>
+        <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Ra đời</a>
+        <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Chuyến đi</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Liên hệ</a>
+        <div class="w3-dropdown-hover w3-hide-small">
+            <button class="w3-button" title="Notifications">Dropdown <i class="fa fa-caret-down"></i></button>
+            <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                <a href="#" class="w3-bar-item w3-button">Link</a>
+                <a href="#" class="w3-bar-item w3-button">Link</a>
+                <a href="#" class="w3-bar-item w3-button">Link</a>
+            </div>
+        </div>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i
+                class="fa fa-search"></i></a>
+    </div>
 
-  <!-- The Grid -->
-  <div class="w3-row-padding">
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+        <a href="#team" class="w3-bar-item w3-button">Team</a>
+        <a href="#work" class="w3-bar-item w3-button">Work</a>
+        <a href="#pricing" class="w3-bar-item w3-button">Price</a>
+        <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+        <a href="#" class="w3-bar-item w3-button">Search</a>
+    </div>
+</div>
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+    <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()"></a>
+</header>
 
-    <!-- Left Column -->
+<div class="w3-row">
     <div class="w3-third">
-      <div class="w3-white w3-text-grey w3-card-4">
-        <div class="w3-third" style="margin-top: 40px">
-          <img src="img/avatar.jpg" style="width: 135px;height: 203px;" alt="Avatar">
-        </div>
-        <div class="w3-twothird">
-          <hr>
-          <p><i class="fa fas fa-heart fa-fw w3-margin-right w3-large w3-text-teal"></i>Lê Tùng Lâm</p>
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Java Developer</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Hanoi, Vietnam</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>letunglam.dev@gmail.com</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>0986296471</p>
-          <p><i class="fa fa-github fa-fw w3-margin-right w3-large w3-text-teal"></i>https://github.com/lamlt1211</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <br>
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Objective</b></p>
-          <p>Looking forward to working in a professional, stable and developing environment for a long-term commitment with the company. The
-            goal of becoming a good developer. Hope to bring value to myself as wel as organization</p>
-          <br>
-
-          <br>
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-futbol-o fa-fw w3-margin-right w3-text-teal"></i>Hobbies</b></p>
-          <p>Learn English</p>
-          <p>Play Football</p>
-          <p>Read and research new technology</p>
-          <br>
-        </div>
-      </div><br>
-      <!-- End Left Column -->
+        <img src="/img/feature/anhnhom.JPEG" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
+        <img src="/img/feature/IMG_1439.JPEG" style="width:100%" onclick="onClick(this)" alt="What a beautiful scenery this sunset">
     </div>
 
-    <!-- Right Column -->
-    <div class="w3-twothird">
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Bachkhoa-Aptech</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2017 - Oct 2020</h6>
-          <p>Major: Information Technology</p>
-          <p>Certificate: Credit</p>
-          <hr>
-        </div>
-      </div>
-
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</h2>
-        <div class="w3-container">
-          <p><b>Programming Language - </b>Can work with Java programming language (Spring)</p>
-          <p><b>Database - </b>Basic understanding of SQL Server,MySQL and Oracle Database</p>
-          <p><b>Tools Build  - </b>Worked with IntelliJ, Net beans, Visual Studio, Eclipse</p>
-          <p><b>Sources Control - </b>Can use Git on platforms like GitHub, Source Tree, Smart Git</p>
-          <p><b>English - </b>Able to read and understand documents in English</p>
-          <p><b>Other Skills - </b>Have a basic understanding of Design Patterns
-            Communication, Teamwork, Agile, Scrum, Docker and presentation skills</p>
-          <hr>
-        </div>
-      </div>
-
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Backend Developer - Lendbiz</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2023 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p>Làm mình làm mẩy</p><br>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Java Developer - Savvycom Software</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2021 - Dec 2022 </h6>
-          <p>- Join the company internal training project - Timesheet</p>
-          <p>- Join project outsource teambase and fixed cost</p>
-          <p>- Develop back-end modules in projects</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Unity Developer - Monster Game Studio</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2021 - May 2021</h6>
-          <p>- Training in SOLID, Design Pattern, Unity</p>
-          <p>- Join making a mini game</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Java Developer - SmartOSC Fintech</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Dec 2019 - Nov 2020</h6>
-          <p>- Take part in training academy of company about Java core, Spring
-            framework, MySQL, Restful API, Thymeleaf, Postman</p>
-          <p>- Write Code , Fix bugs , Write Unit Test</p>
-          <p>- Code followed by basic design as requirements of customers</p>
-          <p>- Participate in and research projects from Viettel side</p>
-          <hr>
-        </div>
-      </div>
-
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-wrench fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects</h2>
-        <h3>Đến công ty chỉ có đi mua bánh mỳ, pha chè cho các anh. Nên là chưa làm dự án nào cả</h3>
-        <!-- <div class="w3-container">
-          <h5 class="w3-opacity"><b>CarDoctor App</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug-2022 - Dec-2022</h6>
-          <table>
-            <tr>
-              <th>Customer</th>
-              <td>Mfunctions</td>
-            </tr>
-            <tr>
-              <th>Description</th>
-              <td>The application allows users and garages to schedule car repairs</td>
-            </tr>
-            <tr>
-              <th>Team size</th>
-              <td>15</td>
-            </tr>
-            <tr>
-              <th>My position</th>
-              <td>Java Developer</td>
-            </tr>
-            <tr>
-              <th>Responsibilities</th>
-              <td>- Design APIs for the screen in the project of booking car repair schedules
-              <td>- Investigate available client APIs</td>
-              <td> Write APIs followed by figma and mobile design</td>
-            </tr>
-            <tr>
-              <th>Technologies used </th>
-              <td>- IntelliJ, Postman, MariaDB, Figma, Java Spring Boot</td>
-            </tr>
-          </table>
-          <hr>
-        </div> -->
-      </div>
-
-
+    <div class="w3-third">
+        <img src="/img/feature/IMG_7362.JPEG" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+        <img src="/img/feature/IMG_0236.JPEG" style="width:100%" onclick="onClick(this)" alt="Waiting for the bus in the desert">
     </div>
-  </div>
+
+    <div class="w3-third">
+        <img src="/img/feature/IMG_0129.JPEG" style="width:100%" onclick="onClick(this)" alt="Canoeing again">
+        <img src="/img/feature/IMG_0548.JPEG" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing">
+    </div>
+</div>
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+    <h2>SLOGAN OUR TEAM</h2>
+    <p>Còn bao nhiêu chơi bấy nhiêu</p>
+
+    <div class="w3-quarter" style="margin-left: 600px">
+        <img src="/img/tuyen.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+        <h3>Bùi Trung Tuyến</h3>
+        <p>Nhóm trưởng - Captain T</p>
+    </div>
+
+    <div class="w3-row"><br>
+        <div class="w3-quarter">
+            <img src="/img/thao.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+            <h3>Nguyễn Phương Thảo</h3>
+            <p>Một chồng một con</p>
+        </div>
+
+        <div class="w3-quarter">
+            <img src="/img/haianh.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+            <h3>Phạm Hải Anh</h3>
+            <p>Lập trình viên</p>
+        </div>
+
+        <div class="w3-quarter">
+            <img src="/img/ngoc.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+            <h3>Hoàng Hồng Ngọc</h3>
+            <p>Du học sinh Hàn Quốc</p>
+        </div>
+
+        <div class="w3-quarter">
+            <img src="/img/phong.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+            <h3>Đinh Hồng Phong</h3>
+            <p>Phong Đà Lạt</p>
+        </div>
+
+        <div class="w3-quarter">
+            <img src="/img/nhat.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+            <h3>Võ Như Nhất</h3>
+            <p>Anh lập trình viên đẹp trai, lên kèo là đi</p>
+        </div>
+
+        <div class="w3-quarter">
+            <img src="/img/linhchuoi.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+            <h3>Bùi Thị Thùy Linh</h3>
+            <p>Nhạt nhất nhóm</p>
+        </div>
+        <div class="w3-quarter">
+            <img src="/img/lam.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+            <h3>Lê Tùng Lâm</h3>
+            <p>Chú xe ôm, yêu hai em bên cạnh</p>
+        </div>
+
+        <div class="w3-quarter">
+            <img src="/img/linhmaruko.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+            <h3>Lê Thị Nhật Linh</h3>
+            <p>Cô y tá may mắn</p>
+        </div>
+    </div>
+</div>
+<!-- Work Row -->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
+
+    <div class="w3-quarter">
+        <h2>Ra đời</h2>
+        <p>Hồ điều hòa ra đời từ năm nào cũng không biết, chỉ biết nhóm này tập hợp nhiều thành phần nhây và bựa. Chơi
+            với nhau chủ yếu bằng tình cảm, nhưng nếu không có kinh tế thì cũng không được tham gia nhóm. Bên cạnh là những bức ảnh đầu tiên chúng tôi chụp cùng nhau</p>
+    </div>
+
+    <div class="w3-quarter">
+        <div class="w3-card w3-white">
+            <img src="/img/kyyeuthao/4cogai.jpg" alt="Lights" style="width:100%">
+            <div class="w3-container">
+                <h3>Bốn cô gái xinh đẹp</h3>
+                <p>Ngọc</p>
+                <p>Thảo</p>
+                <p>Linh Chuối</p>
+                <p>Linh Maruko</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-quarter">
+        <div class="w3-card w3-white">
+            <img src="/img/kyyeuthao/khongcolam.jpg" alt="Mountains" style="width:100%">
+            <div class="w3-container">
+                <h3>Những thành viên đầu tiên</h3>
+                <p>Nhất</p>
+                <p>Ngọc</p>
+                <p>Tuyến</p>
+                <p>Thảo</p>
+                <p>Linh Chuối</p>
+                <p>Linh Maruko</p>
+                <p>Phong</p>
+                <h6>P/s : Ảnh này Lâm xin vào chụp, nhưng bị đuổi ra</h6>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-quarter">
+        <div class="w3-card w3-white">
+            <img src="/img/kyyeuthao/kyyeuthao.JPG" alt="Snow" style="width:100%">
+            <div class="w3-container">
+                <h3>Kỷ yếu Thảo - Cổ Nhuế team</h3>
+                <p>Nhất Bét</p>
+                <p>Lâm Chuột</p>
+                <p>Ngọc Búa</p>
+                <p>Tuyến</p>
+                <p>Phong</p>
+                <h6>P/s : Bị đuổi ở tấm ảnh thứ 2. Nên Lâm đã gọi các bạn ở Cổ Nhuế chụp cùng Lâm cho đỡ tủi thân</h6>
+            </div>
+        </div>
+    </div>
 </div>
 
-<footer class="w3-container w3-teal w3-center w3-margin-top">
-  <p>Contact for me</p>
-  <a href="https://facebook.com/maLgnuTeL">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  </a>
-  <a href="https://www.instagram.com/lamchuot_1211/">
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-  </a>
-  <a href="https://www.linkedin.com/in/lamlt1211/">
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </a>
-  <p>Powered by <a href="https://facebook.com/maLgnuTeL" target="_blank">TugLam</a></p>
+<!-- Container -->
+<div class="w3-container" style="position:relative">
+    <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
+       style="position:absolute;top:-28px;right:24px">+</a>
+</div>
+
+<!-- Pricing Row -->
+<div class="w3-row-padding w3-center w3-padding-64" id="pricing">
+    <h2>Những buổi gặp mặt</h2>
+    <p>Chúng tôi sẽ gặp nhau nhân dịp sinh nhật một ai đó trong nhóm. Hoặc đôi khi cũng chẳng có dịp gì</p>
+        <p>Hãy xem lại những bức ảnh, chúng tôi cụng ly và say đét đèn đẹt nhé</p><br>
+    <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-border w3-hover-shadow">
+            <li class="w3-theme">
+                <p class="w3-xlarge">Ba Vì 2021</p>
+            </li>
+            <img src="/img/bavi/bonban.jpg" width="200" height="200" alt="Avatar">
+            <img src="/img/bavi/bonban1.jpg" width="200" height="200" alt="Avatar">
+            <img src="/img/bavi/thaolinh.jpg" width="200" height="200" alt="Avatar">
+            <img src="/img/bavi/ghepanh.jpg" width="200" height="200" alt="Avatar">
+            <li class="w3-theme-l5 w3-padding-24">
+                <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-border w3-hover-shadow">
+            <li class="w3-theme-l2">
+                <p class="w3-xlarge">Hồ Đồng Đò 2022</p>
+            </li>
+            <img src="/img/bavi/bonban.jpg" width="200" height="200" alt="Avatar">
+            <img src="/img/bavi/bonban1.jpg" width="200" height="200" alt="Avatar">
+            <img src="/img/bavi/thaolinh.jpg" width="200" height="200" alt="Avatar">
+            <img src="/img/bavi/ghepanh.jpg" width="200" height="200" alt="Avatar">
+            <li class="w3-theme-l5 w3-padding-24">
+                <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-border w3-hover-shadow">
+            <li class="w3-theme">
+                <p class="w3-xlarge">Đảo Cô Tô 2023</p>
+            </li>
+            <img src="/img/bavi/bonban.jpg" width="200" height="200" alt="Avatar">
+            <img src="/img/bavi/bonban1.jpg" width="200" height="200" alt="Avatar">
+            <img src="/img/bavi/thaolinh.jpg" width="200" height="200" alt="Avatar">
+            <img src="/img/bavi/ghepanh.jpg" width="200" height="200" alt="Avatar">
+            <li class="w3-theme-l5 w3-padding-24">
+                <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="w3-row-padding w3-center w3-padding-64" id="pricing">
+    <h2>Những chuyến đi</h2>
+    <p>Hãy xem lại những bức ảnh, những kỳ niệm cùng chúng mình nhé</p><br>
+    <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-border w3-hover-shadow">
+            <li class="w3-theme">
+                <p class="w3-xlarge">Ba Vì 2021</p>
+            </li>
+            <img src="/img/bavi/bonban.jpg" width="200" height="200" alt="Avatar">
+            <img src="/img/bavi/bonban1.jpg" width="200" height="200" alt="Avatar">
+            <img src="/img/bavi/thaolinh.jpg" width="200" height="200" alt="Avatar">
+            <img src="/img/bavi/ghepanh.jpg" width="200" height="200" alt="Avatar">
+            <li class="w3-theme-l5 w3-padding-24">
+                <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-border w3-hover-shadow">
+            <li class="w3-theme-l2">
+                <p class="w3-xlarge">Hồ Đồng Đò 2022</p>
+            </li>
+            <img src="/img/bavi/bonban.jpg" width="200" height="200" alt="Avatar">
+            <img src="/img/bavi/bonban1.jpg" width="200" height="200" alt="Avatar">
+            <img src="/img/bavi/thaolinh.jpg" width="200" height="200" alt="Avatar">
+            <img src="/img/bavi/ghepanh.jpg" width="200" height="200" alt="Avatar">
+            <li class="w3-theme-l5 w3-padding-24">
+                <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-border w3-hover-shadow">
+            <li class="w3-theme">
+                <p class="w3-xlarge">Đảo Cô Tô 2023</p>
+            </li>
+            <img src="/img/bavi/bonban.jpg" width="200" height="200" alt="Avatar">
+            <img src="/img/bavi/bonban1.jpg" width="200" height="200" alt="Avatar">
+            <img src="/img/bavi/thaolinh.jpg" width="200" height="200" alt="Avatar">
+            <img src="/img/bavi/ghepanh.jpg" width="200" height="200" alt="Avatar">
+            <li class="w3-theme-l5 w3-padding-24">
+                <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+    <div class="w3-row">
+        <div class="w3-col m5">
+            <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact HoDieuHoa</span></div>
+            <h3>Address</h3>
+            <p>Liên hệ với chúng tôi, nếu cần. Không cần thì cũng cứ liên hệ nhé.</p>
+            <p>Hoặc có ý kiến đóng góp.</p>
+            <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i> Hanoi Vietnam</p>
+            <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i> 0333970688 - Mr Tuyến</p>
+            <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i> hodieuhoa@gmail.com</p>
+        </div>
+        <div class="w3-col m7">
+            <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
+                <div class="w3-section">
+                    <label>Name</label>
+                    <input class="w3-input" type="text" name="Name" required>
+                </div>
+                <div class="w3-section">
+                    <label>Email</label>
+                    <input class="w3-input" type="text" name="Email" required>
+                </div>
+                <div class="w3-section">
+                    <label>Message</label>
+                    <input class="w3-input" type="text" name="Message" required>
+                </div>
+                <input class="w3-check" type="checkbox" checked name="Like">
+                <label>I Like it!</label>
+                <button type="submit" class="w3-button w3-right w3-theme">Send</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%;">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+    <h4>Follow Us</h4>
+    <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+    <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+    <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i
+            class="fa fa-google-plus"></i></a>
+    <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
+    <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i
+            class="fa fa-linkedin"></i></a>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+
+    <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+        <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>
+        <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+    </div>
 </footer>
+
+<script>
+    // Script for side navigation
+    function w3_open() {
+        var x = document.getElementById("mySidebar");
+        x.style.width = "300px";
+        x.style.paddingTop = "10%";
+        x.style.display = "block";
+    }
+
+    // Close side navigation
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+    }
+
+    // Used to toggle the menu on smaller screens when clicking on the menu button
+    function openNav() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+</script>
+
+<script>
+    // Script to open and close sidebar
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+    }
+
+    // Modal Image Gallery
+    function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+    }
+
+</script>
 
 </body>
 </html>

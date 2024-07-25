@@ -1,0 +1,21 @@
+@media (max-width: 768px) {
+    body {
+        background-color: lightblue;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        background-color: lightgreen;
+    }
+
+    .container {
+        flex-direction: row;
+        padding: 20px;
+    }
+}
